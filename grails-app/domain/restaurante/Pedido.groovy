@@ -2,12 +2,14 @@ package restaurante
 
 class Pedido {
 
-    Date data
+    Date dataHora
     Double valorTotal
     Cliente client
 
     static hasMany = [itens: ItemPedido]
+
     static constraints = {
+        client nullable: false
     }
 
     static mapping = {

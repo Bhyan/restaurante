@@ -15,7 +15,7 @@ hibernate {
 environments {
     development {
         dataSource {
-            dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
+            dbCreate = "update" /* "create-drop" */ // one of 'create', 'create-drop', 'update', 'validate', ''
             url = "jdbc:mysql://localhost/restaurante"
             username = "root"
             password = "142536"
