@@ -25,7 +25,7 @@
     </g:remoteLink>
 
 	  <div id="divLista">
-	    <g:render template="lista" model="[produtos: produtos]"></g:render>
+	    <g:render template="lista" model="[produto: produtos]"></g:render>
 	  </div>
 	  <div id="divForm"></div>
 	</body>
