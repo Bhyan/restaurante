@@ -3,7 +3,7 @@ package restaurante
 class ProdutoController {
 	
     def index() { 
-        def lista = Produto.list()		
+        def lista = Produto.list()
         render(view:"/produto/index", model: [produtos: lista])
 	}
 
@@ -14,17 +14,17 @@ class ProdutoController {
         novoProduto.estoque.quantidade = 0
         novoProduto.estoque.quantidadeMinima = 0
 
-        render(template: "/produto/form", model: [produto: novoProduto])
+        render(template: "/produto/form", model: [produtos: novoProduto])
     }
 
     def alterar() {
-        produto produto = Produto.get(params.id)
-        render(template: "/produto/form", model: [produto: produto])
+        Produto produto = Produto.get(params.id)
+        render(template: "/produto/form", model: [produtos: produto])
     }
     
     def listar() {
         def lista = Produto.list()
-        render(template: "/produto/lista", model: [produto: lista])
+        render(template: "/produto/lista", model: [produtos: lista])
     }
 
     def salvar() {
@@ -59,6 +59,6 @@ class ProdutoController {
         produto.delete(flush: true)
 
         def lista = Produto.list()
-        render(template: '/produto/lista', model: [produto: lista])
+        render(template: '/produto/lista', model: [produtos: lista])
     }
 }

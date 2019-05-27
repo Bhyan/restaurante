@@ -27,10 +27,10 @@ class BootStrap {
         }
 
         if (UsuarioPermissao.findByUsuarioAndPermissao(administrador,admin) == null) {
-            UsuarioPermissao(usuario: administrador, permissao: admin).save(flush:true)
+            new UsuarioPermissao(usuario: administrador, permissao: admin).save(flush:true)
         }
         if (UsuarioPermissao.findByUsuarioAndPermissao(balconista,balcao) == null) {
-            UsuarioPermissao(usuario: balconista, permissao: balcao).save(flush:true)
+            new UsuarioPermissao(usuario: balconista, permissao: balcao).save(flush:true)
         }
     }
 

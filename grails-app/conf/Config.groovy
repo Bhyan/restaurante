@@ -122,8 +122,8 @@ grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'comum.UsuarioP
 grails.plugin.springsecurity.authority.className = 'comum.Permissao'
 
 grails.plugin.springsecurity.auth.loginFormUrl = '/areaRestrita/logar'
-grails.plugin.springsecurity.logout.afterLogoutUrl = '/areaRestrita/logout'
 grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/areaRestrita/admin'
+grails.plugin.springsecurity.logout.afterLogoutUrl = '/areaRestrita/logout'
 grails.plugin.springsecurity.failureHandler.defaultFailureUrl = '/areaRestrita/erro'
 grails.plugin.springsecurity.successHandler.alwaysUseDefault = false
 grails.plugin.springsecurity.dao.hideUserNotFoundExceptions = false
@@ -137,6 +137,10 @@ grails.plugin.springsecurity.interceptUrlMap = [
 	'/**':               ['IS_AUTHENTICATED_ANONYMOUSLY']	
 ]
 
+// Added by the Spring Security Core plugin:
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'comum.Usuario'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'comum.UsuarioPermissao'
+grails.plugin.springsecurity.authority.className = 'comum.Permissao'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/':                              ['permitAll'],
 	'/index':                         ['permitAll'],

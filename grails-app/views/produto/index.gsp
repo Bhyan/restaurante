@@ -6,7 +6,7 @@
 
     <script type="text/javascript">
       function carregarLista(){
-        <g:remoteFunction controller="produto" action="lista" update="divLista" />
+        <g:remoteFunction controller="produto" action="listar" update="divLista" />
       }
       function excluir(id){
         if (confirm("Deseja realmente excluir?")){
@@ -30,4 +30,3 @@
 	  <div id="divForm"></div>
 	</body>
 </html>
-
