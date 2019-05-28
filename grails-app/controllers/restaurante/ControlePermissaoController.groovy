@@ -1,4 +1,4 @@
-package restaurantetocomfome
+package restaurante
 
 import grails.converters.JSON;
 import comum.Permissao;
