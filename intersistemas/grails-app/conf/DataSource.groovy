@@ -3,7 +3,7 @@ dataSource {
     jmxExport = true
     driverClassName = "com.mysql.jdbc.Driver"
     username = "root"
-    password = "root"
+    password = "142536"
 }
 hibernate {
     cache.use_second_level_cache = true
@@ -25,7 +25,7 @@ environments {
     test {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:mysql://localhost/intersistemas"
+            url = "jdbc:mysql://localhost/intersistemasTest"
         }
     }
     production {

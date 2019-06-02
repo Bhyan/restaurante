@@ -74,9 +74,14 @@ class LivroController {
     }
 
     def buscar(String titulo, String autor, String isbn) {
-        def lista = Livro.consultarLivroPor(titulo, autor, isbn).list()
 
-        render(view: '/livro/buscar', model: [livros: lista])
+        if(titulo != null || autor != null || isbn != null){
+            def lista = Livro.consultarLivroPor(titulo, autor, isbn).list()
+            render(view: '/livro/buscar', model: [livros: lista])
+        }
+        else {
+            render(view: '/livro/buscar')
+        }
     }
 
     @Transactional
@@ -94,7 +99,8 @@ class LivroController {
             flash.error = erro.message
         }
 
-        redirect(action: 'buscar', params: [titulo: compra?.titulo, autor: compra?.autor, isbn: compra?.isbn])
+        redirect(action: 'buscar', params: [titulo: compra?.titulo, autor:
+        compra?.autor?.nome, isbn: compra?.isbn])
 
     }
 

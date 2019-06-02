@@ -16,7 +16,7 @@
     <g:form name="frmBusca" url="[controller: 'livro', action: 'buscar']">
     <div class="fieldcontain ${hasErrors(bean: livroInstance, field: 'titulo', 'error')} required">
         <label for="titulo">
-            <g:message code="livro.titulo.label" default="Titulo" />
+            <g:message code="livro.titulo.label" default="Título"/>
         </label>
         <input type="text" name="titulo" ><br>
     </div>
@@ -46,13 +46,13 @@
         <thead>
         <tr>
 
-            <g:sortableColumn property="titulo" title="${message(code: 'livro.titulo.label', default: 'Titulo')}" />
+            <g:sortableColumn property="titulo" title="${message(code: 'livro.titulo.label', default: 'Título')}" />
 
             <g:sortableColumn property="autor" title="${message(code: 'livro.autor.label', default: 'Autor')}" />
 
             <g:sortableColumn property="isbn" title="${message(code: 'livro.isbn.label', default: 'Isbn')}" />
 
-            <g:sortableColumn property="preco" title="${message(code: 'livro.preco.label', default: 'Preco')}" />
+            <g:sortableColumn property="preco" title="${message(code: 'livro.preco.label', default: 'Preço')}" />
 
             <g:sortableColumn property="quantidade" title="${message(code: 'livro.quantidade.label', default: 'Quantidade')}" />
 
@@ -62,7 +62,11 @@
         <tbody>
             <g:each var="livro" in="${livros}">
                 <tr>
-                    <td><g:link action="show" id="${livro?.id}">${fieldValue(bean: livro, field: "titulo")}</g:link></td>
+                    <td>
+                        <g:link action="show" id="${livro?.id}">
+                            ${fieldValue(bean: livro, field: "titulo")}
+                        </g:link>
+                    </td>
 
                     <td>${livro?.autor?.nome}</td>
 

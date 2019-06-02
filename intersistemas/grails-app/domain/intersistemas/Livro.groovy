@@ -11,8 +11,9 @@ class Livro {
     static belongsTo = [autor: Autor]
 
     def debitarEstoque(Integer qtd) {
-        if (qtd > quantidade)
+        if (qtd > quantidade) {
             throw new RuntimeException("Quantidade invalida.")
+        }
 
         quantidade -= qtd
     }
@@ -26,16 +27,15 @@ class Livro {
     }
 
     static namedQueries = {
-        consultarLivroPor { String titulo, String pautor, String isbn ->
+        consultarLivroPor { String titulo, String autor, String isbn ->
             or {
                 if (titulo)
                     like('titulo', "%${titulo}%")
-                if (pautor)
-                    autor{
-                        like('nome', "%${pautor}%")
+                if (autor) {
+                    autor {
+                        like('nome', "%${autor}%")
                     }
-                    // like('autor', "%${autor}%")
-                    //"select livro from Autor livro join livro.Autor autorLivro where autorLivro.name = '%${autor}'"
+                }
                 if (isbn)
                     like('isbn', "%${isbn}%")
             }
