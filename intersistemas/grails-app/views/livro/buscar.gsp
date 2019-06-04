@@ -12,6 +12,12 @@
         <ul>
             <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
         </ul>
+        <ul>
+            <sec:ifLoggedIn>
+                ${session.user}
+                <a href="/Restaurante/j_spring_security_logout">Sair</a>
+            </sec:ifLoggedIn>
+        </ul>
     </div>
     <g:form name="frmBusca" url="[controller: 'livro', action: 'buscar']">
     <div class="fieldcontain ${hasErrors(bean: livroInstance, field: 'titulo', 'error')} required">

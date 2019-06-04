@@ -145,4 +145,12 @@ class LoginController {
 	def ajaxDenied() {
 		render([error: 'access denied'] as JSON)
 	}
+
+	def loginSucesso(){
+		def user = springSecurityService.getCurrentUser()
+
+		session.user = user.username
+
+		render(view: '/index')
+	}
 }

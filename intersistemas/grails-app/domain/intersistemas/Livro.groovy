@@ -27,17 +27,17 @@ class Livro {
     }
 
     static namedQueries = {
-        consultarLivroPor { String titulo, String autor, String isbn ->
+        consultarLivroPor { String tituloConsulta, String autorConsulta, String isbnConsulta ->
             or {
-                if (titulo)
-                    like('titulo', "%${titulo}%")
-                if (autor) {
+                if (tituloConsulta)
+                    like('titulo', "%${tituloConsulta}%")
+                if (autorConsulta) {
                     autor {
-                        like('nome', "%${autor}%")
+                        like('nome', "%${autorConsulta}%")
                     }
                 }
-                if (isbn)
-                    like('isbn', "%${isbn}%")
+                if (isbnConsulta)
+                    like('isbn', "%${isbnConsulta}%")
             }
         }
     }

@@ -1,0 +1,3 @@
+--Output from Compra 1 livro--
+--Output from Comprando mais livros que a quantidade no estoque--
+--Output from Cosulta por autor--

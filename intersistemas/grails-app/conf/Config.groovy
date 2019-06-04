@@ -122,3 +122,5 @@ grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'comum.UsuarioP
 grails.plugin.springsecurity.authority.className = 'comum.Permissao'
 grails.plugin.springsecurity.requestMap.className = 'comum.Mapeamento'
 grails.plugin.springsecurity.securityConfigType = 'Requestmap'
+grails.plugin.springsecurity.successHandler.alwaysUseDefault = true
+grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/Login/loginSucesso'

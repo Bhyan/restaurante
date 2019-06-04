@@ -1,2 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites />
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="felipe-Inspiron-5420" id="0" name="LivroIntegrationSpec" package="test" skipped="0" tests="3" time="0.443" timestamp="2019-06-04T13:46:31">
+      <properties />
+
+      <testcase classname="test.LivroIntegrationSpec" name="Compra 1 livro" time="0.265" />
+
+      <testcase classname="test.LivroIntegrationSpec" name="Comprando mais livros que a quantidade no estoque" time="0.027" />
+
+      <testcase classname="test.LivroIntegrationSpec" name="Cosulta por autor" time="0.143" />
+
+      <system-out><![CDATA[--Output from Compra 1 livro--
+--Output from Comprando mais livros que a quantidade no estoque--
+--Output from Cosulta por autor--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Compra 1 livro--
+--Output from Comprando mais livros que a quantidade no estoque--
+--Output from Cosulta por autor--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

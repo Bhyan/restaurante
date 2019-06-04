@@ -9,7 +9,7 @@ class BootStrap {
 
         if (!Mapeamento.count())
             for (String url in [
-                    '/', '/index', '/index.gsp', '/**/favicon.ico',
+                    '/**/favicon.ico',
                     '/assets/**', '/**/js/**', '/**/css/**', '/**/images/**',
                     '/login', '/login.*', '/login/*',
                     '/logout', '/logout.*', '/logout/*']) {
@@ -24,6 +24,7 @@ class BootStrap {
         UsuarioPermissao.findOrSaveWhere(usuario: admin, permissao: role_admin)
 
         Mapeamento.findOrSaveWhere(url: "/livro/**", configAttribute: role_admin?.authority)
+        Mapeamento.findOrSaveWhere(url: "/", configAttribute: role_admin?.authority)
         Mapeamento.findOrSaveWhere(url: "/autor/**", configAttribute: role_admin?.authority)
 
     }

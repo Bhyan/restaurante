@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/intersistemas/intersistemas.iml" filepath="$PROJECT_DIR$/intersistemas/intersistemas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/intersistemas/intersistemas-grailsPlugins.iml" filepath="$PROJECT_DIR$/intersistemas/intersistemas-grailsPlugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restaurante/restaurante.iml" filepath="$PROJECT_DIR$/restaurante/restaurante.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restaurante/restaurante-grailsPlugins.iml" filepath="$PROJECT_DIR$/restaurante/restaurante-grailsPlugins.iml" />
+    </modules>
+  </component>
+</project>
