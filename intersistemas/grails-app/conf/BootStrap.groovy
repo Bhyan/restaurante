@@ -5,28 +5,27 @@ import comum.UsuarioPermissao
 
 class BootStrap {
 
-    def springSecurityService
-
     def init = { servletContext ->
-            /**
-             * Criar os papeis existentes
-             */
-            def role_admin = Permissao.findOrSaveWhere(authority: "ROLE_ADMIN")
 
-             /**
-             *  Criar os mapeamentos
-             */
+        if (!Mapeamento.count())
             for (String url in [
-                    '/', '/index', '/**/favicon.ico',
-                    '/**/js/**', '/**/css/**', '/**/images/**',
-                    '/login', '/login/**', '/logout', '/logout/**']) {
-                def map = Mapeamento.findOrSaveWhere(url: url, configAttribute: 'permitAll')
+                    '/', '/index', '/index.gsp', '/**/favicon.ico',
+                    '/assets/**', '/**/js/**', '/**/css/**', '/**/images/**',
+                    '/login', '/login.*', '/login/*',
+                    '/logout', '/logout.*', '/logout/*']) {
+                new Mapeamento(url: url, configAttribute: 'permitAll').save()
             }
 
-            Usuario admin = Usuario.findOrSaveWhere(username: "admin", password: "1234", accountExpired: false,
-                    accountLocked: false, passwordExpired: false).save(flush: true)
+        def role_admin = Permissao.findOrSaveWhere(authority: "ROLE_ADMIN")
 
-            def permissao = UsuarioPermissao.findOrSaveWhere(usuario: admin, permissao: role_admin)
+        Usuario admin = Usuario.findOrSaveWhere(username: "admin", password: "admin", accountExpired: false,
+                accountLocked: false, passwordExpired: false).save(flush: true)
+
+        UsuarioPermissao.findOrSaveWhere(usuario: admin, permissao: role_admin)
+
+        Mapeamento.findOrSaveWhere(url: "/livro/**", configAttribute: role_admin?.authority)
+        Mapeamento.findOrSaveWhere(url: "/autor/**", configAttribute: role_admin?.authority)
+
     }
 
     def destroy = {

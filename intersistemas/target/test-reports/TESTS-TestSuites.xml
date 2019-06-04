@@ -1,19 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-  <testsuite errors="0" failures="0" hostname="localhost" id="0" name="LivroIntegrationSpec" package="test" skipped="0" tests="2" time="1.196" timestamp="2019-06-02T16:24:00">
-      <properties />
-
-      <testcase classname="test.LivroIntegrationSpec" name="Compra 1 livro" time="1.074" />
-
-      <testcase classname="test.LivroIntegrationSpec" name="Comprando mais livros que a quantidade no estoque" time="0.101" />
-
-      <system-out><![CDATA[--Output from Compra 1 livro--
---Output from Comprando mais livros que a quantidade no estoque--
-]]></system-out>
-
-      <system-err><![CDATA[--Output from Compra 1 livro--
---Output from Comprando mais livros que a quantidade no estoque--
-]]></system-err>
-
-  </testsuite>
-</testsuites>
+<testsuites />
