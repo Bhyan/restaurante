@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="felipe-Inspiron-5420" name="test.LivroIntegrationSpec" skipped="0" tests="3" time="0.443" timestamp="2019-06-04T13:46:31">
+<testsuite errors="0" failures="0" hostname="localhost" name="test.LivroIntegrationSpec" skipped="0" tests="3" time="1.648" timestamp="2019-06-05T01:20:24">
   <properties />
-  <testcase classname="test.LivroIntegrationSpec" name="Compra 1 livro" time="0.265" />
-  <testcase classname="test.LivroIntegrationSpec" name="Comprando mais livros que a quantidade no estoque" time="0.027" />
-  <testcase classname="test.LivroIntegrationSpec" name="Cosulta por autor" time="0.143" />
+  <testcase classname="test.LivroIntegrationSpec" name="Compra 1 livro" time="1.16" />
+  <testcase classname="test.LivroIntegrationSpec" name="Comprando mais livros que a quantidade no estoque" time="0.071" />
+  <testcase classname="test.LivroIntegrationSpec" name="Cosulta por autor" time="0.397" />
   <system-out><![CDATA[--Output from Compra 1 livro--
 --Output from Comprando mais livros que a quantidade no estoque--
 --Output from Cosulta por autor--

@@ -11,7 +11,7 @@ class Livro {
     static belongsTo = [autor: Autor]
 
     def debitarEstoque(Integer qtd) {
-        if (qtd > quantidade) {
+        if (qtd > quantidade || qtd <= 0) {
             throw new RuntimeException("Quantidade invalida.")
         }
 
