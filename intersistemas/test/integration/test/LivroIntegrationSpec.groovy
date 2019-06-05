@@ -37,7 +37,7 @@ class LivroIntegrationSpec extends IntegrationSpec {
             "Stephen Hawking"|         76 | "Uma Breve História do Tempo"             |"978-0-553-10953-5"|      42.00 |             100
             "Dave Eggers"    |         49 | "Uma Comovente Obra de Espantoso Talento" |"0-684-86347-2"    |      40.00 |             100
             "Ishmael Beah"   |         38 | "Muito Longe de Casa"                     |"8500021217"       |      40.00 |             100
-            "Lemony Snicket" |         49 | "Mau Começo"                              |"972-710-304-9 "   |      38.00 |             100
+            "Lemony Snicket" |         49 | "Mau Começo"                              |"972-710-304-9"    |      38.00 |             100
     }
 
     def "Comprando mais livros que a quantidade no estoque"() {

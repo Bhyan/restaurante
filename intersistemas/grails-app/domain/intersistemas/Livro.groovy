@@ -12,7 +12,7 @@ class Livro {
 
     def debitarEstoque(Integer qtd) {
         if (qtd > quantidade || qtd <= 0) {
-            throw new RuntimeException("Quantidade invalida.")
+            throw new LivroException(livro: this,message: "Quantidade invalida.")
         }
 
         quantidade -= qtd

@@ -3,92 +3,94 @@
 <head>
     <meta name="layout" content="main">
     <title>Buscar Livro</title>
-
 </head>
 
 <body>
 
-    <div class="nav" role="navigation">
-        <ul>
-            <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-        </ul>
-        <li style="float: right; margin-top: -25px; display: flex;">
-            <sec:ifLoggedIn>
-                <h4 style="text-transform: capitalize; margin-top: 5px; margin-right: 5px">${session.user}</h4>
-                <a href="/intersistemas/j_spring_security_logout">Sair</a>
-            </sec:ifLoggedIn>
-        </li>
-    </div>
-    <g:form name="frmBusca" url="[controller: 'livro', action: 'buscar']">
+<div class="nav" role="navigation">
+    <ul>
+        <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
+    </ul>
+    <li style="float: right; margin-top: -25px; display: flex;">
+        <sec:ifLoggedIn>
+            <h4 style="text-transform: capitalize; margin-top: 5px; margin-right: 5px">${session.user}</h4>
+            <a href="/intersistemas/j_spring_security_logout">Sair</a>
+        </sec:ifLoggedIn>
+    </li>
+</div>
+<g:form name="frmBusca" url="[controller: 'livro', action: 'buscar']">
     <div class="fieldcontain ${hasErrors(bean: livroInstance, field: 'titulo', 'error')} required">
         <label for="titulo">
             <g:message code="livro.titulo.label" default="Título"/>
         </label>
-        <input type="text" name="titulo" ><br>
+        <input type="text" name="titulo"><br>
     </div>
+
     <div class="fieldcontain ${hasErrors(bean: livroInstance, field: 'autor', 'error')} required">
         <label for="autor">
-            <g:message code="livro.autor.label" default="Autor" />
+            <g:message code="livro.autor.label" default="Autor"/>
         </label>
-        <input type="text" name="autor" ><br>
+        <input type="text" name="autor"><br>
     </div>
+
     <div class="fieldcontain ${hasErrors(bean: livroInstance, field: 'isbn', 'error')} required">
         <label for="isbn">
-            <g:message code="livro.isbn.label" default="ISBN" />
+            <g:message code="livro.isbn.label" default="ISBN"/>
         </label>
-        <input type="text" name="isbn" ><br><br>
+        <input type="text" name="isbn"><br><br>
     </div>
-        <fieldset class="buttons">
-            <g:submitButton name="btnBuscar" value="Buscar" />
-        </fieldset>
-        <br>
-        <g:if test="${flash.message}">
-            <div class="message" role="status">${flash.message}</div>
-        </g:if>
-        <g:if test="${flash.error}">
-            <div class="errors" role="status">${flash.error}</div>
-        </g:if>
-    <table>
-        <thead>
-        <tr>
+    <fieldset class="buttons">
+        <g:submitButton name="btnBuscar" value="Buscar"/>
+    </fieldset>
+    <br>
+    <g:if test="${flash.message}">
+        <div class="message" role="status">${flash.message}</div>
+    </g:if>
+    <g:if test="${flash.error}">
+        <div class="errors" role="status">${flash.error}</div>
+    </g:if>
 
-            <g:sortableColumn property="titulo" title="${message(code: 'livro.titulo.label', default: 'Título')}" />
+    <div id="divCompra">
+        <g:render template="comprar"></g:render>
+    </div>
+</g:form>
 
-            <g:sortableColumn property="autor" title="${message(code: 'livro.autor.label', default: 'Autor')}" />
+<a name="btnComprar" value="Comprar" id="comprar">Comprar</a>
 
-            <g:sortableColumn property="isbn" title="${message(code: 'livro.isbn.label', default: 'Isbn')}" />
+<script type="text/javascript">
+    $(document).ready(function () {
 
-            <g:sortableColumn property="preco" title="${message(code: 'livro.preco.label', default: 'Preço')}" />
+        $("#comprar").click(function () {
 
-            <g:sortableColumn property="quantidade" title="${message(code: 'livro.quantidade.label', default: 'Quantidade')}" />
+            const data = $('input').serialize()
 
-            <g:sortableColumn property="quantidade" title="Comprar" />
-        </tr>
-        </thead>
-        <tbody>
-            <g:each var="livro" in="${livros}">
-                <tr>
-                    <td>
-                        <g:link action="show" id="${livro?.id}">
-                            ${fieldValue(bean: livro, field: "titulo")}
-                        </g:link>
-                    </td>
+            //AJAX aqui
 
-                    <td>${livro?.autor?.nome}</td>
+            $.ajax({
+                method: "POST",
+                url: "${createLink(controller: 'livro', action: 'comprarAjax')}",
+                data: data
+            }).done(function (data) {
+                $("#divCompra").html(data)
+                // alert("success -"+data);
+            }).fail(function (jqXHR, textStatus ) {
+                alert("error - "+jqXHR.responseText);
+            }).always(function () {
 
-                    <td>${livro?.isbn}</td>
+            });
 
-                    <td>${livro?.preco}</td>
 
-                    <td>${livro?.quantidade}</td>
+            // $(':checkbox:checked').each(function () {
+            //     console.log($(this).attr("id"));
+            // });
+        });
 
-                    <td><g:link action="comprar" id="${livro.id}">Comprar</g:link></td>
 
-                </tr>
-
-            </g:each>
-        </tbody>
-    </table>
-    </g:form>
+        $("#checkboxAll").click(function () {
+            $(".checkboxId").prop('checked', $(this).prop('checked'));
+        });
+    });
+</script>
 </body>
+
 </html>

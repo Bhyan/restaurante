@@ -105,6 +105,49 @@ class LivroController {
     }
 
     @Transactional
+    def comprarAjax() {
+
+        def listaIds = params.list('checkboxId')
+        def quantidade = params.list('qtdCompra')
+
+        def livros = []
+
+        // interar em listaIds
+//        listaIds.each { id, index ->
+            for (int i = 0; i < listaIds.size(); i++) {
+                def id = listaIds[i]
+                def compra = Livro.get(id)
+
+                livros << compra
+
+                def quantidadeCompra = 1
+
+                try {
+                    if(quantidade[i] && quantidade[i]!="")
+                        quantidadeCompra = quantidade[i] as int
+
+                    compra.debitarEstoque(quantidadeCompra)
+                    if (!compra.save(flush: true)) {
+                        throw new RuntimeException(compra.errors)
+                    }
+
+                    flash.message = g.message(code: 'msg.default.success.buy', default: 'Compra realizada com sucesso.')
+                    render template: 'comprar', model: [livros: livros]
+                }
+                catch (LivroException le) {
+                    flash.error = le.message
+                    render template: 'comprar', model: [livros: livros]
+                }catch (RuntimeException erro) {
+                    render erro.message, status: INTERNAL_SERVER_ERROR
+                }
+            }
+
+//        redirect(action: 'buscar', params: [titulo: compra?.titulo, autor:
+//                compra?.autor?.nome, isbn: compra?.isbn])
+
+    }
+
+    @Transactional
     def delete(Livro livroInstance) {
 
         if (livroInstance == null) {

@@ -2,101 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f1a72de-6472-45ed-ab60-a463ef6cccfe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/livro/_comprar.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/intersistemas/LivroException.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/controllers/intersistemas/LivroController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/controllers/intersistemas/LivroController.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grails-app/domain/intersistemas/Livro.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/intersistemas/Livro.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grails-app/views/livro/buscar.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/livro/buscar.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intersistemas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/intersistemas.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/Mapeamento$__clinit__closure1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/Mapeamento$__clinit__closure2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/Mapeamento.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/Permissao$__clinit__closure1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/Permissao$__clinit__closure2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/Permissao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/Usuario$__clinit__closure2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/Usuario$__clinit__closure3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/Usuario$_getAuthorities_closure1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/Usuario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/UsuarioPermissao$__clinit__closure10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/UsuarioPermissao$__clinit__closure9$_closure14$_closure15.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/UsuarioPermissao$__clinit__closure9$_closure14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/UsuarioPermissao$__clinit__closure9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/UsuarioPermissao$_exists_closure2$_closure12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/UsuarioPermissao$_exists_closure2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/UsuarioPermissao$_get_closure1$_closure11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/UsuarioPermissao$_get_closure1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/UsuarioPermissao$_removeAll_closure5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/UsuarioPermissao$_removeAll_closure6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/UsuarioPermissao$_removeAll_closure7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/UsuarioPermissao$_removeAll_closure8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/UsuarioPermissao$_remove_closure3$_closure13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/UsuarioPermissao$_remove_closure3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/UsuarioPermissao$_remove_closure4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/comum/UsuarioPermissao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/Autor$__clinit__closure1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/Autor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$__tt__delete_closure15$_closure24$_closure25.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$__tt__delete_closure15$_closure24$_closure26.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$__tt__delete_closure15$_closure24.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$__tt__delete_closure15.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$__tt__edit_closure13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$__tt__index_closure10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$__tt__index_closure9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$__tt__save_closure12$_closure18$_closure19.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$__tt__save_closure12$_closure18$_closure20.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$__tt__save_closure12$_closure18.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$__tt__save_closure12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$__tt__show_closure11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$__tt__update_closure14$_closure21$_closure22.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$__tt__update_closure14$_closure21$_closure23.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$__tt__update_closure14$_closure21.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$__tt__update_closure14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$_create_closure3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$_delete_closure7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$_edit_closure5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$_index_closure1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$_notFound_closure8$_closure16.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$_notFound_closure8$_closure17.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$_notFound_closure8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$_save_closure4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$_show_closure2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController$_update_closure6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/AutorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/Livro$__clinit__closure1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/Livro$__clinit__closure2$_closure3$_closure4$_closure5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/Livro$__clinit__closure2$_closure3$_closure4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/Livro$__clinit__closure2$_closure3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/Livro$__clinit__closure2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/Livro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$__tt__delete_closure13$_closure20.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$__tt__delete_closure13$_closure21.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$__tt__delete_closure13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$__tt__save_closure11$_closure16.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$__tt__save_closure11$_closure17.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$__tt__save_closure11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$__tt__update_closure12$_closure18.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$__tt__update_closure12$_closure19.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$__tt__update_closure12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$_buscar_closure7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$_comprar_closure8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$_create_closure3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$_delete_closure9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$_edit_closure5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$_index_closure1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$_notFound_closure10$_closure14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$_notFound_closure10$_closure15.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$_notFound_closure10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$_save_closure4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$_show_closure2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController$_update_closure6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/intersistemas/intersistemas/LivroController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/intersistemas/Livro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/intersistemas/Livro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/intersistemas/LivroController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/intersistemas/LivroController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/stacktrace.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/stacktrace.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-integration-integration-test.LivroIntegrationSpec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-integration-integration-test.LivroIntegrationSpec.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-reports/TESTS-TestSuites.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TESTS-TestSuites.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-reports/html/all.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/html/all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-reports/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-reports/html/test/0_LivroIntegrationSpec.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/html/test/0_LivroIntegrationSpec.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-reports/plain/TEST-integration-integration-test.LivroIntegrationSpec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/plain/TEST-integration-integration-test.LivroIntegrationSpec.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/integration/test/LivroIntegrationSpec.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/test/integration/test/LivroIntegrationSpec.groovy" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$USER_HOME$/.grails/" />
@@ -117,17 +38,106 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1974141855">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="groovy" value="6" />
+          <entry key="gsp" value="2" />
+          <entry key="js" value="1" />
+          <entry key="sql" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="GSP" value="2" />
+          <entry key="Groovy" value="6" />
+          <entry key="JavaScript" value="1" />
+          <entry key="Scratch" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="groovy" value="745" />
+          <entry key="gsp" value="1085" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="GSP" value="1085" />
+          <entry key="Groovy" value="745" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="intersistemas" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/livro/buscar.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="76" column="25" lean-forward="true" selection-start-line="68" selection-start-column="13" selection-end-line="76" selection-end-column="25" />
+              <folding>
+                <element signature="n#style#0;n#li#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#li#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#g:if#0;n#g:form#0;n#gsp:root#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/livro/_comprar.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/intersistemas/LivroController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="137" column="36" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/intersistemas/Livro.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+            </state>
+          </provider>
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/intersistemas/LivroException.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -142,14 +152,29 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/controllers/intersistemas/LivroController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/intersistemas/Livro.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/livro/buscar.gsp" />
-        <option value="$PROJECT_DIR$/test/integration/test/LivroIntegrationSpec.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
+        <option value="$PROJECT_DIR$/test/integration/test/LivroIntegrationSpec.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/livro/_comprar.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/livro/buscar.gsp" />
+        <option value="$PROJECT_DIR$/src/java/LivroException.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/intersistemas/Livro.groovy" />
+        <option value="$PROJECT_DIR$/src/java/intersistemas/LivroException.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/intersistemas/LivroController.groovy" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
@@ -157,14 +182,16 @@
     <option name="width" value="1221" />
     <option name="height" value="635" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,52 +202,13 @@
             <path>
               <item name="intersistemas" type="b2602c69:ProjectViewProjectNode" />
               <item name="intersistemas" type="462c0819:PsiDirectoryNode" />
-              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="intersistemas" type="b2602c69:ProjectViewProjectNode" />
               <item name="intersistemas" type="462c0819:PsiDirectoryNode" />
-              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="intersistemas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="intersistemas" type="462c0819:PsiDirectoryNode" />
-              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="intersistemas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="intersistemas" type="462c0819:PsiDirectoryNode" />
-              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="intersistemas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="intersistemas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="intersistemas" type="462c0819:PsiDirectoryNode" />
-              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="intersistemas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="intersistemas" type="462c0819:PsiDirectoryNode" />
-              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="intersistemas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="intersistemas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="intersistemas" type="462c0819:PsiDirectoryNode" />
-              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="intersistemas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="intersistemas" type="462c0819:PsiDirectoryNode" />
-              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="livro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="intersistemas" type="b2602c69:ProjectViewProjectNode" />
@@ -239,35 +227,36 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="integration" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="intersistemas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="intersistemas" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="intersistemas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="intersistemas" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-              <item name="intersistemas" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Grails" />
+      <pane id="Grails" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql&#10;mariadb" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559747648722" />
     <property name="grails.last.selected.app.url" value="file://$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="intersistemas" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -308,6 +297,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="intersistemas" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="intersistemas" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Grails.Grails: intersistemas" />
+      <item itemvalue="JUnit.LivroIntegrationSpec.Pesquisa por autor" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.LivroIntegrationSpec.Pesquisa por autor" />
@@ -365,12 +405,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27389000" />
+    <option name="totallyTimeSpent" value="40780000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
+    <frame x="1366" y="-1" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49006623" visible="true" weight="0.175" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49006623" visible="true" weight="0.17718795" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -381,10 +422,10 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Grails Console" order="2" sideWeight="0.49924242" visible="true" weight="0.36754966" />
+      <window_info anchor="bottom" id="Grails Console" order="2" sideWeight="0.49924242" weight="0.36645162" />
       <window_info anchor="bottom" id="Find" order="3" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.3294702" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.49172187" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.34354195" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" visible="true" weight="0.38482025" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
@@ -402,7 +443,7 @@
       <window_info anchor="right" id="Maven" order="4" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Database" order="7" weight="0.32954547" />
+      <window_info anchor="right" id="Database" order="7" weight="0.27044475" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
@@ -410,45 +451,68 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/grails-app/controllers/intersistemas/LivroController.groovy</url>
+          <line>125</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/grails-app/controllers/intersistemas/LivroController.groovy</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>if(quantidade[i]){println 'null'}else{println 'não'}</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>quantidade[i]</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>quantidade[i]?'null':'não'</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>quantidade[i] ? 1 : (quantidade[i] as int)</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>quantidade</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>index</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>quantidade[index]</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(quantidade[index] as int)</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>like</expression-string>
-        <language-id>Groovy</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>consultarLivroPor</expression-string>
-        <language-id>Groovy</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>namedQueries</expression-string>
-        <language-id>Groovy</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>like('nome', &quot;%${autor}%&quot;)</expression-string>
-        <language-id>Groovy</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>autor</expression-string>
-        <language-id>Groovy</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>params.autor</expression-string>
-        <language-id>Groovy</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>params.titulo</expression-string>
-        <language-id>Groovy</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>params</expression-string>
         <language-id>Groovy</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -473,13 +537,6 @@
       </provider>
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/intersistemas/LivroController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///opt/grails-2.5.6/lib/junit/junit/jars/junit-4.12.jar!/org/junit/runner/manipulation/Filter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-187">
@@ -491,15 +548,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
           <caret line="159" selection-start-line="159" selection-end-line="159" />
-          <folding>
-            <element signature="e#5668#5669#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/intersistemas/Livro.groovy">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/livro/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -518,17 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/livro/buscar.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#li#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -543,20 +582,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/integration/test/LivroIntegrationSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="79" column="14" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="14" />
+        <state relative-caret-position="189">
+          <caret line="39" column="103" selection-start-line="39" selection-start-column="103" selection-end-line="39" selection-end-column="103" />
           <folding>
             <element signature="e#14#54#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/76e4489a-da76-4383-94ba-a6f54877e5b2/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/grails-2.5.6/dist/grails-plugin-gsp-2.5.6-sources.jar!/org/codehaus/groovy/grails/plugins/web/taglib/FormTagLib.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="236" column="12" lean-forward="true" selection-start-line="236" selection-start-column="12" selection-end-line="236" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/work/plugins/jquery-1.11.1/web-app/js/jquery/jquery-1.11.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2906">
+          <caret line="8913" column="4" selection-start-line="8913" selection-start-column="4" selection-end-line="8913" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/livro/buscar.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="76" column="25" lean-forward="true" selection-start-line="68" selection-start-column="13" selection-end-line="76" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#li#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#g:if#0;n#g:form#0;n#gsp:root#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/livro/_comprar.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/intersistemas/LivroException.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/intersistemas/Livro.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/intersistemas/LivroController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="137" column="36" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -592,9 +689,81 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Hibernate</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>grails-2.5.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>intersistemas</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
