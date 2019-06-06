@@ -55,6 +55,7 @@
     </div>
 </g:form>
 
+<span name="totalCompra" id="totalCompra">Total R$ </span><br>
 <a name="btnComprar" value="Comprar" id="comprar">Comprar</a>
 
 <script type="text/javascript">
@@ -63,8 +64,6 @@
         $("#comprar").click(function () {
 
             const data = $('input').serialize()
-
-            //AJAX aqui
 
             $.ajax({
                 method: "POST",
@@ -75,20 +74,24 @@
                 // alert("success -"+data);
             }).fail(function (jqXHR, textStatus ) {
                 alert("error - "+jqXHR.responseText);
-            }).always(function () {
-
-            });
-
-
-            // $(':checkbox:checked').each(function () {
-            //     console.log($(this).attr("id"));
-            // });
+            }).always(function () {});
         });
-
 
         $("#checkboxAll").click(function () {
             $(".checkboxId").prop('checked', $(this).prop('checked'));
         });
+
+        $(".checkboxId:checked").click(function () {
+            compra = 0
+
+            $('.checkboxId:checked').each(function(){
+                const id = $(this).val();
+
+                compra += $('#qtdCompra_'+ id).val() * $('#precoUni_'+ id).text()
+            });
+
+            $("#totalCompra").html('Total R$ ' + compra)
+        })
     });
 </script>
 </body>

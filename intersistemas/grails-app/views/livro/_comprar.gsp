@@ -39,13 +39,13 @@
 
             <td>${livro?.isbn}</td>
 
-            <td>${livro?.preco}</td>
+            <td id="precoUni_${livro?.id}">${livro?.preco}</td>
 
             <td>${livro?.quantidade}</td>
 
-            <td><g:checkBox name="checkboxId" class="checkboxId" value="${livro?.id}"/></td>
+            <td><g:checkBox name="checkbox_${livro?.id}" id='checkboxId_${livro?.id}' class="checkboxId" value="${livro?.id}"/></td>
 
-            <td><input type="text" name="qtdCompra"></td>
+            <td><input type="number" id="qtdCompra_${livro?.id}" class="qtdCompra" min="0" max="${livro?.quantidade}"></td>
 
         </tr>
 
