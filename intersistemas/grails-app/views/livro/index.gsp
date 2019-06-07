@@ -34,7 +34,7 @@
 						<g:sortableColumn property="preco" title="${message(code: 'livro.preco.label', default: 'Preco')}" />
 					
 						<g:sortableColumn property="quantidade" title="${message(code: 'livro.quantidade.label', default: 'Quantidade')}" />
-					
+
 					</tr>
 				</thead>
 				<tbody>
@@ -50,7 +50,7 @@
 						<td>${fieldValue(bean: livroInstance, field: "preco")}</td>
 					
 						<td>${fieldValue(bean: livroInstance, field: "quantidade")}</td>
-					
+
 					</tr>
 				</g:each>
 				</tbody>

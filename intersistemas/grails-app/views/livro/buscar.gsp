@@ -40,7 +40,7 @@
         <input type="text" name="isbn"><br><br>
     </div>
     <fieldset class="buttons">
-        <g:submitButton name="btnBuscar" value="Buscar"/>
+        <g:submitButton name="btnBuscar" value="Buscar" style="margin-left: 19.5%"/>
     </fieldset>
     <br>
     <g:if test="${flash.message}">
@@ -55,45 +55,12 @@
     </div>
 </g:form>
 
-<span name="totalCompra" id="totalCompra">Total R$ </span><br>
-<a name="btnComprar" value="Comprar" id="comprar">Comprar</a>
+<span name="totalCompra" id="totalCompra" style="margin-left: 45%; color: #48802C"><b>Total R$ 0,0</b></span><br><br>
+<fieldset class="buttons">
+    <a name="btnComprar" value="Comprar" id="comprar" data-url="${createLink(controller: 'livro', action: 'comprarAjax')}"
+    style="margin-left: 45%">Comprar</a>
+</fieldset>
 
-<script type="text/javascript">
-    $(document).ready(function () {
-
-        $("#comprar").click(function () {
-
-            const data = $('input').serialize()
-
-            $.ajax({
-                method: "POST",
-                url: "${createLink(controller: 'livro', action: 'comprarAjax')}",
-                data: data
-            }).done(function (data) {
-                $("#divCompra").html(data)
-                // alert("success -"+data);
-            }).fail(function (jqXHR, textStatus ) {
-                alert("error - "+jqXHR.responseText);
-            }).always(function () {});
-        });
-
-        $("#checkboxAll").click(function () {
-            $(".checkboxId").prop('checked', $(this).prop('checked'));
-        });
-
-        $(".checkboxId:checked").click(function () {
-            compra = 0
-
-            $('.checkboxId:checked').each(function(){
-                const id = $(this).val();
-
-                compra += $('#qtdCompra_'+ id).val() * $('#precoUni_'+ id).text()
-            });
-
-            $("#totalCompra").html('Total R$ ' + compra)
-        })
-    });
-</script>
 </body>
 
 </html>

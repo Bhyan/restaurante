@@ -79,6 +79,12 @@ class LivroController {
             def lista = Livro.consultarLivroPor(titulo, autor, isbn).list()
             render(view: '/livro/buscar', model: [livros: lista])
         }
+
+        else if (titulo != "" || autor != "" || isbn != ""){
+            def lista = Livro.consultarLivroPor(titulo, autor, isbn).list()
+            render(view: '/livro/buscar', model: [livros: lista])
+        }
+
         else {
             render(view: '/livro/buscar')
         }
@@ -111,6 +117,11 @@ class LivroController {
         def quantidade = params.list('qtdCompra')
 
         def livros = []
+
+        if(!listaIds?.size()) {
+            render 'Nenhum livro foi selecionado', status: INTERNAL_SERVER_ERROR
+            return
+        }
 
         for (int i = 0; i < listaIds.size(); i++) {
             def id = listaIds[i]

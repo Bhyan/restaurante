@@ -8,9 +8,6 @@
     <thead>
     <tr>
 
-        <g:checkBox name="checkboxAll" id="checkboxAll"
-                    style="float: right; margin-right: 93px; margin-bottom: 11px"></g:checkBox>
-
         <g:sortableColumn property="titulo" title="${message(code: 'livro.titulo.label', default: 'Título')}"/>
 
         <g:sortableColumn property="autor" title="${message(code: 'livro.autor.label', default: 'Autor')}"/>
@@ -20,9 +17,14 @@
         <g:sortableColumn property="preco" title="${message(code: 'livro.preco.label', default: 'Preço')}"/>
 
         <g:sortableColumn property="quantidade"
-                          title="${message(code: 'livro.quantidade.label', default: 'Quantidade')}"/>
+                          title="${message(code: 'livro.quantidade.label', default: 'Estoque')}"/>
 
-        <g:sortableColumn property="comprar" title="${message(code: 'livro.comprar.label', default: 'Comprar')}"/>
+        <g:sortableColumn property="comprar" title="${message(code: 'livro.comprar.label', default: 'Quantidade')}"/>
+
+        <th >
+            <g:checkBox name="checkboxAll" id="checkboxAll"
+                    style="margin-right: 20px; margin-bottom: 11px; margin-top: 7px"></g:checkBox>
+        </th>
 
     </tr>
     </thead>
@@ -43,10 +45,9 @@
 
             <td>${livro?.quantidade}</td>
 
-            <td><g:checkBox name="checkbox_${livro?.id}" id='checkboxId_${livro?.id}' class="checkboxId" value="${livro?.id}"/></td>
+            <td><input type="number" id="qtdCompra_${livro?.id}" class="qtdCompra" min="0" max="${livro?.quantidade}" value="0"></td>
 
-            <td><input type="number" id="qtdCompra_${livro?.id}" class="qtdCompra" min="0" max="${livro?.quantidade}"></td>
-
+            <td><g:checkBox name="checkboxId" checked="false" id='checkboxId_${livro?.id}' class="checkboxId" value="${livro?.id}"/></td>
         </tr>
 
     </g:each>
