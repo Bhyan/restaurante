@@ -124,3 +124,4 @@ grails.plugin.springsecurity.requestMap.className = 'comum.Mapeamento'
 grails.plugin.springsecurity.securityConfigType = 'Requestmap'
 grails.plugin.springsecurity.successHandler.alwaysUseDefault = true
 grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/Login/loginSucesso'
+grails.plugin.springsecurity.roleHierarchy = 'ROLE_ADMIN > ROLE_USER'

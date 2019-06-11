@@ -7,7 +7,16 @@ class BootStrap {
 
     def init = { servletContext ->
 
-        if (!Mapeamento.count())
+        def role_admin = Permissao.findOrSaveWhere(authority: "ROLE_ADMIN")
+        def role_user = Permissao.findOrSaveWhere(authority: "ROLE_USER")
+
+        Usuario admin = Usuario.findOrSaveWhere(username: "admin", password: "admin", accountExpired: false,
+                accountLocked: false, passwordExpired: false).save(flush: true)
+
+        UsuarioPermissao.findOrSaveWhere(usuario: admin, permissao: role_admin)
+
+
+        if (!Mapeamento.count()) {
             for (String url in [
                     '/**/favicon.ico',
                     '/assets/**', '/**/js/**', '/**/css/**', '/**/images/**',
@@ -15,17 +24,12 @@ class BootStrap {
                     '/logout', '/logout.*', '/logout/*']) {
                 new Mapeamento(url: url, configAttribute: 'permitAll').save()
             }
+            for (String url in [ "/livro/**", "/", "/autor/**", "/usuario/**", "/permissao/**", "/usuarioPermissao/**" ]) {
+                new Mapeamento(url: url, configAttribute: 'ROLE_ADMIN').save()
+            }
 
-        def role_admin = Permissao.findOrSaveWhere(authority: "ROLE_ADMIN")
-
-        Usuario admin = Usuario.findOrSaveWhere(username: "admin", password: "admin", accountExpired: false,
-                accountLocked: false, passwordExpired: false).save(flush: true)
-
-        UsuarioPermissao.findOrSaveWhere(usuario: admin, permissao: role_admin)
-
-        Mapeamento.findOrSaveWhere(url: "/livro/**", configAttribute: role_admin?.authority)
-        Mapeamento.findOrSaveWhere(url: "/", configAttribute: role_admin?.authority)
-        Mapeamento.findOrSaveWhere(url: "/autor/**", configAttribute: role_admin?.authority)
+            Mapeamento.findOrSaveWhere(url: "/livro/**", configAttribute: role_user?.authority)
+        }
 
     }
 

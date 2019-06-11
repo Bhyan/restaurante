@@ -75,12 +75,7 @@ class LivroController {
 
     def buscar(String titulo, String autor, String isbn) {
 
-        if(titulo != null || autor != null || isbn != null){
-            def lista = Livro.consultarLivroPor(titulo, autor, isbn).list()
-            render(view: '/livro/buscar', model: [livros: lista])
-        }
-
-        else if (titulo != "" || autor != "" || isbn != ""){
+        if((titulo != null && titulo != "") || (autor != null && autor != "") || (isbn != null && isbn != "")){
             def lista = Livro.consultarLivroPor(titulo, autor, isbn).list()
             render(view: '/livro/buscar', model: [livros: lista])
         }

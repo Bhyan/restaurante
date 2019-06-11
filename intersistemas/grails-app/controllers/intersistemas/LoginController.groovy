@@ -151,6 +151,17 @@ class LoginController {
 
 		session.user = user.username
 
-		render(view: '/index')
+		if (SpringSecurityUtils.ifAnyGranted("ROLE_ADMIN")) {
+			redirect(uri:'/')
+		}
+		else if (SpringSecurityUtils.ifAnyGranted("ROLE_USER")) {
+            redirect(controller: 'livro', action: 'buscar')
+
+		}
+		else {
+			redirect(controller: 'logout')
+		}
+
+
 	}
 }
