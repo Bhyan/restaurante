@@ -23,7 +23,8 @@
 
         <th >
             <g:checkBox name="checkboxAll" id="checkboxAll"
-                    style="margin-right: 20px; margin-bottom: 11px; margin-top: 7px"></g:checkBox>
+                    style="margin-right: 20px; margin-bottom: 11px; margin-top: 7px"/>
+
         </th>
 
     </tr>

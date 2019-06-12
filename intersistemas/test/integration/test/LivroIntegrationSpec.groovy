@@ -78,8 +78,8 @@ class LivroIntegrationSpec extends IntegrationSpec {
             livro.save(flush: true)
 
         expect:
-            def qtd = Livro.consultarLivroPor(null, "George Orwell", null).count()
-            qtd == 1
+            def livroBanco = Livro.consultarLivroPor(null, "George Orwell", null).get()
+            livroBanco?.autor?.nome == "George Orwell"
 
     }
 }

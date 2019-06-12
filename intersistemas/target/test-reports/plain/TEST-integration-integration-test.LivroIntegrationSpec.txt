@@ -1,5 +1,5 @@
 Testsuite: test.LivroIntegrationSpec
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1,648 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,526 sec
 ------------- Standard Output ---------------
 --Output from Compra 1 livro--
 --Output from Comprando mais livros que a quantidade no estoque--
@@ -11,6 +11,6 @@ Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1,648 sec
 --Output from Cosulta por autor--
 ------------- ---------------- ---------------
 
-Testcase: Compra 1 livro took 1,16 sec
-Testcase: Comprando mais livros que a quantidade no estoque took 0,071 sec
-Testcase: Cosulta por autor took 0,397 sec
+Testcase: Compra 1 livro took 0,317 sec
+Testcase: Comprando mais livros que a quantidade no estoque took 0,043 sec
+Testcase: Cosulta por autor took 0,155 sec

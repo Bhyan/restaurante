@@ -53,7 +53,7 @@ class UsuarioController {
     }
 
     @Transactional
-    def update(Usuario usuarioInstance) {
+    def update(Usuario usuarioInstance, Permissao permissao) {
         if (usuarioInstance == null) {
             notFound()
             return
@@ -65,6 +65,8 @@ class UsuarioController {
         }
 
         usuarioInstance.save flush:true
+
+        UsuarioPermissao.findOrSaveWhere(usuario: usuarioInstance, permissao: permissao)
 
         request.withFormat {
             form multipartForm {
