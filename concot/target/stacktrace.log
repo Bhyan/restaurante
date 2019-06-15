@@ -1,0 +1,105 @@
+2019-05-22 19:54:14,602 [http-bio-8080-exec-4] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error executing filter after view error: No value for key [org.hibernate.internal.SessionFactoryImpl@7c7536a] bound to thread [http-bio-8080-exec-4]. Original error: No value for key [org.hibernate.internal.SessionFactoryImpl@7c7536a] bound to thread [http-bio-8080-exec-4]
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.renderViewForUrlMappingInfo(UrlMappingsFilter.java:416)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:222)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:67)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:442)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1082)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:623)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: No value for key [org.hibernate.internal.SessionFactoryImpl@7c7536a] bound to thread [http-bio-8080-exec-4]
+	at org.springframework.transaction.support.TransactionSynchronizationManager.unbindResource(TransactionSynchronizationManager.java:210)
+	at org.springframework.orm.hibernate4.support.OpenSessionInViewInterceptor.afterCompletion(OpenSessionInViewInterceptor.java:144)
+	at org.codehaus.groovy.grails.orm.hibernate.support.GrailsOpenSessionInViewInterceptor.afterCompletion(GrailsOpenSessionInViewInterceptor.java:136)
+	at org.springframework.web.servlet.handler.WebRequestHandlerInterceptorAdapter.afterCompletion(WebRequestHandlerInterceptorAdapter.java:72)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.renderViewForUrlMappingInfo(UrlMappingsFilter.java:413)
+	... 31 more
+2019-05-22 19:54:14,609 [http-bio-8080-exec-4] ERROR StackTrace  - Full Stack Trace:
+java.lang.IllegalStateException: No value for key [org.hibernate.internal.SessionFactoryImpl@7c7536a] bound to thread [http-bio-8080-exec-4]
+	at org.springframework.transaction.support.TransactionSynchronizationManager.unbindResource(TransactionSynchronizationManager.java:210)
+	at org.springframework.orm.hibernate4.support.OpenSessionInViewInterceptor.afterCompletion(OpenSessionInViewInterceptor.java:144)
+	at org.codehaus.groovy.grails.orm.hibernate.support.GrailsOpenSessionInViewInterceptor.afterCompletion(GrailsOpenSessionInViewInterceptor.java:136)
+	at org.springframework.web.servlet.handler.WebRequestHandlerInterceptorAdapter.afterCompletion(WebRequestHandlerInterceptorAdapter.java:72)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.renderViewForUrlMappingInfo(UrlMappingsFilter.java:413)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:222)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:67)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:442)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1082)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:623)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-22 19:54:14,610 [http-bio-8080-exec-4] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error executing filter after view error: No value for key [org.hibernate.internal.SessionFactoryImpl@7c7536a] bound to thread [http-bio-8080-exec-4]. Original error: No value for key [org.hibernate.internal.SessionFactoryImpl@7c7536a] bound to thread [http-bio-8080-exec-4]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: No value for key [org.hibernate.internal.SessionFactoryImpl@7c7536a] bound to thread [http-bio-8080-exec-4]
+	... 3 more
+2019-05-22 19:54:14,615 [http-bio-8080-exec-4] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error executing filter after view error: No value for key [org.hibernate.internal.SessionFactoryImpl@7c7536a] bound to thread [http-bio-8080-exec-4]. Original error: No value for key [org.hibernate.internal.SessionFactoryImpl@7c7536a] bound to thread [http-bio-8080-exec-4]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: No value for key [org.hibernate.internal.SessionFactoryImpl@7c7536a] bound to thread [http-bio-8080-exec-4]
+	... 3 more
+2019-05-22 19:54:14,616 [http-bio-8080-exec-4] ERROR StackTrace  - Full Stack Trace:
+java.lang.IllegalStateException: No value for key [org.hibernate.internal.SessionFactoryImpl@7c7536a] bound to thread [http-bio-8080-exec-4]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-22 19:54:14,616 [http-bio-8080-exec-4] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.mapping.exceptions.UrlMappingException: Error executing filter after view error: No value for key [org.hibernate.internal.SessionFactoryImpl@7c7536a] bound to thread [http-bio-8080-exec-4]. Original error: No value for key [org.hibernate.internal.SessionFactoryImpl@7c7536a] bound to thread [http-bio-8080-exec-4]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: No value for key [org.hibernate.internal.SessionFactoryImpl@7c7536a] bound to thread [http-bio-8080-exec-4]
+	... 3 more
